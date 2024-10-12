@@ -1,0 +1,150 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+% Page layout adjustments
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins to fit all content on one page
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.25in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section title formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Custom commands for consistency
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \textbf{#1} \hfill #2 \\
+  \textit{\small#3} \hfill \textit{\small #4} \vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge Mubtasim Fuad} \\ \vspace{3pt}
+    fuadmubtasim@gmail.com $|$ (+880) 1742714066 $|$ Chattogram 4226, Bangladesh \\
+    \faGithub\ \href{https://github.com/mubtasimfuad}{github.com/mubtasimfuad} \hspace{10pt}
+    \faLinkedinSquare\ \href{https://www.linkedin.com/in/mubtasimfuad}{linkedin.com/in/mubtasimfuad} \hspace{10pt}
+    \faStackExchange\ \href{https://stackoverflow.com/users/16574349/mubtasimfuad}{stackoverflow.com/users/16574349/mubtasimfuad} \hspace{10pt}
+    \faMedium\ \href{https://medium.com/@fuadmubtasim}{medium.com/@fuadmubtasim}
+\end{center}
+
+%----------- SUMMARY (Optional) -----------
+\section{Summary}
+\resumeSubHeadingListStart
+    \resumeItem{Experienced Backend Developer with a strong focus on architecting cloud-native solutions and building scalable backend systems. Proficient in developing AI-driven applications, leveraging Large Language Models (LLMs) and multi-agent systems for sophisticated data processing and real-time decision-making. Expertise includes implementing Retrieval-Augmented Generation (RAG) techniques and deploying advanced AI architectures across cloud platforms. Proven ability to collaborate with offshore and cross-functional teams to deliver innovative, high-performance solutions that optimize workflows and enhance system efficiency.}
+\resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+\section{Skills}
+\resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages:} Python, JavaScript, Typescript, Java, C\#, SQL, NoSQL, HTML}
+    \resumeItem{\textbf{Technologies:} AWS, Django, Django Rest Framework, Express.js, FastApi, Docker, Linux, Web Scraping, Selenium, Data Analysis, Langchain}
+    \resumeItem{\textbf{Methodologies:} OOP, Agile, Git, DevOps, CI/CD, RAG, API Development}
+    \resumeItem{\textbf{Soft Skills:} Collaboration with offshore teams, leadership, problem-solving, communication}
+\resumeSubHeadingListEnd
+
+%----------- EXPERIENCE -----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Shadhin Lab LLC}{Hybrid}
+  {Solution Developer (Backend)}{Aug 2023 -- Present}
+  \resumeItemListStart
+    \resumeItem{Collaborated with an offshore team to build scalable cloud-native applications.}
+    \resumeItem{Developed serverless applications on AWS using Lambda, CDK, Aurora, DynamoDB, and SAM.}
+    \resumeItem{\textbf{Gen-AI Application:} Led the development of a RAG-based Gen-AI application for real-time document retrieval and summarization using GPT. Built multiple agents with specialized knowledge bases and distinct roles to manage various tools and services for the system. \href{https://docadvisor.xyz}{docadvisor.xyz}, \href{https://shadhin.ai}{shadhin.ai}}
+    \resumeItem{\textbf{One Stop LMS:} Worked on development a full-featured MOOC platform allowing users to stream courses, take exams, and receive certifications. \href{https://app.onestoplms.com}{app.onestoplms.com}.}
+    \resumeItem{\textbf{Online Meeting Tool:} Collaborated and implemented an online video conferencing solution with real-time collaboration features. \href{https://meetmates.live}{meetmates.live}.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Shadhin Lab LLC}{Hybrid}
+  {Intern (Backend)}{May 2023 -- Jul 2023}
+  \resumeItemListStart
+    \resumeItem{Trained on cloud-native development and assisted in backend project deployments.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {AWS CDK Python E-commerce Project}{}
+  {Developed a serverless backend with AWS Lambda, DynamoDB, SQS, and API Gateway, streamlining inventory management and user interactions.}
+
+\resumeSubheading
+  {Hashfad, Multi Vendor Shopping App}{}
+  {Built a unified multi-vendor shopping platform using Django Rest Framework, Celery for task management, and Docker for deployment.}
+
+\resumeSubheading
+  {Team Blogging App (Django, Bootstrap)}{}
+  {Created a blogging platform with user profiles, CRUD operations, and a nested commenting system.}
+
+\resumeSubheading
+  {'Petuk' Android App (Java, Firebase)}{}
+  {Developed a B2C app for food ordering from various restaurants, leveraging Firebase for backend services and authentication.}
+
+\resumeSubheading
+  {University Management System (C\#, .Net)}{}
+  {Implemented modules for course enrollment, teacher assignment, and registration, streamlining university administration.}
+
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {International Islamic University Chittagong}{Chattogram, Bangladesh}
+  {Bachelor of Science in Computer Science \& Engineering, GPA: 3.447/4.00}{Graduated: 2022}
+
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATIONS -----------
+\section{Certifications}
+\resumeSubHeadingListStart
+    \resumeItem{AWS Certified Cloud Practitioner - AWS}
+    \resumeItem{Python with Django - Pondit}
+    \resumeItem{Applied Data Science I - WorldQuant University}
+    \resumeItem{Python Data Structure - University of Michigan (Coursera)}
+    \resumeItem{Web Application Development-DotNet - BITM}
+\resumeSubHeadingListEnd
+
+%----------- REFERENCE -----------
+\section{References}
+\resumeSubHeadingListStart
+    \resumeItem{References available upon request.}
+\resumeSubHeadingListEnd
+
+\end{document}
+
