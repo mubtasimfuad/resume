@@ -7,14 +7,12 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 
-% Page layout adjustments
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins to fit all content on one page
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -25,28 +23,33 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Section title formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\titlerule \vspace{-5pt}]
 
-% Custom commands for consistency
+% Resume Item commands
 \newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{0pt}\item
   \textbf{#1} \hfill #2 \\
-  \textit{\small#3} \hfill \textit{\small #4} \vspace{-7pt}
+  \textit{\small#3} \hfill \textit{\small #4}
+  \vspace{-4pt}
 }
+\newcommand{\resumeProjectHeading}[1]{
+  \vspace{2pt}
+  \item \textbf{#1}
+  \vspace{-4pt}
+}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------- RESUME STARTS -------------------------
 \begin{document}
 
-%---------- HEADING ----------
+%---------- HEADER ----------
 \begin{center}
     \textbf{\Huge Mubtasim Fuad} \\ \vspace{3pt}
     fuadmubtasim@gmail.com $|$ (+880) 1742714066 $|$ Chattogram 4226, Bangladesh \\
@@ -56,19 +59,19 @@
     \faMedium\ \href{https://medium.com/@fuadmubtasim}{medium.com/@fuadmubtasim}
 \end{center}
 
-%----------- SUMMARY (Optional) -----------
-\section{Summary}
+%----------- OBJECTIVE -----------
+\section{Objective}
 \resumeSubHeadingListStart
-    \resumeItem{Experienced Backend Developer with a strong focus on architecting cloud-native solutions and building scalable backend systems. Proficient in developing AI-driven applications, leveraging Large Language Models (LLMs) and multi-agent systems for sophisticated data processing and real-time decision-making. Expertise includes implementing Retrieval-Augmented Generation (RAG) techniques and deploying advanced AI architectures across cloud platforms. Proven ability to collaborate with offshore and cross-functional teams to deliver innovative, high-performance solutions that optimize workflows and enhance system efficiency.}
+  \resumeItem{Early-career software engineer with a strong foundation in backend development, seeking to grow within a collaborative engineering team by building reliable, cloud-native systems and engaging in continuous learning.}
 \resumeSubHeadingListEnd
 
 %----------- SKILLS -----------
 \section{Skills}
 \resumeSubHeadingListStart
-    \resumeItem{\textbf{Languages:} Python, JavaScript, Typescript, Java, C\#, SQL, NoSQL, HTML}
-    \resumeItem{\textbf{Technologies:} AWS, Django, Django Rest Framework, Express.js, FastApi, Docker, Linux, Web Scraping, Selenium, Data Analysis, Langchain}
-    \resumeItem{\textbf{Methodologies:} OOP, Agile, Git, DevOps, CI/CD, RAG, API Development}
-    \resumeItem{\textbf{Soft Skills:} Collaboration with offshore teams, leadership, problem-solving, communication}
+  \resumeItem{\textbf{Languages:} Python, JavaScript, TypeScript, SQL, NoSQL, HTML}
+  \resumeItem{\textbf{Frameworks \& Tools:} Django, Flask, FastAPI, React, AWS, Docker, Git, Linux}
+  \resumeItem{\textbf{Concepts:} Cloud-Native Architecture, REST APIs, Agile, CI/CD, Testing \& Debugging, RAG, LLM Agents}
+  \resumeItem{\textbf{Soft Skills:} Adaptability, problem-solving, code review collaboration, continuous improvement, agile mindset}
 \resumeSubHeadingListEnd
 
 %----------- EXPERIENCE -----------
@@ -77,46 +80,52 @@
 
 \resumeSubheading
   {Shadhin Lab LLC}{Hybrid}
-  {Solution Developer (Backend)}{Aug 2023 -- Present}
+  {Solution Developer}{Aug 2023 -- Present}
   \resumeItemListStart
-    \resumeItem{Collaborated with an offshore team to build scalable cloud-native applications.}
-    \resumeItem{Developed serverless applications on AWS using Lambda, CDK, Aurora, DynamoDB, and SAM.}
-    \resumeItem{\textbf{Gen-AI Application:} Led the development of a RAG-based Gen-AI application for real-time document retrieval and summarization using GPT. Built multiple agents with specialized knowledge bases and distinct roles to manage various tools and services for the system. \href{https://docadvisor.xyz}{docadvisor.xyz}, \href{https://shadhin.ai}{shadhin.ai}}
-    \resumeItem{\textbf{One Stop LMS:} Worked on development a full-featured MOOC platform allowing users to stream courses, take exams, and receive certifications. \href{https://app.onestoplms.com}{app.onestoplms.com}.}
-    \resumeItem{\textbf{Online Meeting Tool:} Collaborated and implemented an online video conferencing solution with real-time collaboration features. \href{https://meetmates.live}{meetmates.live}.}
+    \resumeItem{Collaborated on backend systems powering scalable, cloud-native platforms.}
+    \resumeItem{Contributed across multiple projects, including AI-enhanced tools and R\&D-driven initiatives.}
+    \resumeItem{Involved in architecture discussions, sprint reviews, retrospectives, and quality assurance workflows.}
+    \resumeItem{\textbf{Key projects:} \href{https://docadvisor.xyz}{docadvisor.xyz}, \href{https://shadhin.ai}{shadhin.ai}, \href{https://app.onestoplms.com}{onestoplms.com}, \href{https://meetmates.live}{meetmates.live}.}
   \resumeItemListEnd
 
 \resumeSubheading
   {Shadhin Lab LLC}{Hybrid}
-  {Intern (Backend)}{May 2023 -- Jul 2023}
+  {Intern}{May 2023 -- Jul 2023}
   \resumeItemListStart
-    \resumeItem{Trained on cloud-native development and assisted in backend project deployments.}
+    \resumeItem{Collaborated with senior developers and the product team to understand software development processes.}
+    \resumeItem{Participated in documentation, QA reviews, sprint grooming, and internal planning efforts.}
   \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 %----------- PROJECTS -----------
 \section{Projects}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-  {AWS CDK Python E-commerce Project}{}
-  {Developed a serverless backend with AWS Lambda, DynamoDB, SQS, and API Gateway, streamlining inventory management and user interactions.}
+\resumeProjectHeading{AWS CDK E-commerce Platform}
+\resumeItemListStart
+  \resumeItem{Built a serverless backend using AWS Lambda, DynamoDB, API Gateway, and CDK for inventory and order management.}
+\resumeItemListEnd
 
-\resumeSubheading
-  {Hashfad, Multi Vendor Shopping App}{}
-  {Built a unified multi-vendor shopping platform using Django Rest Framework, Celery for task management, and Docker for deployment.}
+\resumeProjectHeading{Hashfad - Multi-vendor Marketplace}
+\resumeItemListStart
+  \resumeItem{Designed a scalable e-commerce backend supporting vendor onboarding, async order flows, and dashboard analytics.}
+\resumeItemListEnd
 
-\resumeSubheading
-  {Team Blogging App (Django, Bootstrap)}{}
-  {Created a blogging platform with user profiles, CRUD operations, and a nested commenting system.}
+\resumeProjectHeading{Team Blogging Platform}
+\resumeItemListStart
+  \resumeItem{Created a collaborative blogging site with nested comments, user profiles, and moderation tools.}
+\resumeItemListEnd
 
-\resumeSubheading
-  {'Petuk' Android App (Java, Firebase)}{}
-  {Developed a B2C app for food ordering from various restaurants, leveraging Firebase for backend services and authentication.}
+\resumeProjectHeading{Petuk - Restaurant Ordering App}
+\resumeItemListStart
+  \resumeItem{Developed an Android-based food ordering app with real-time order tracking using Firebase.}
+\resumeItemListEnd
 
-\resumeSubheading
-  {University Management System (C\#, .Net)}{}
-  {Implemented modules for course enrollment, teacher assignment, and registration, streamlining university administration.}
+\resumeProjectHeading{University Management System}
+\resumeItemListStart
+  \resumeItem{Implemented course registration and scheduling logic using C\# and .NET framework.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -126,24 +135,24 @@
 
 \resumeSubheading
   {International Islamic University Chittagong}{Chattogram, Bangladesh}
-  {Bachelor of Science in Computer Science \& Engineering, GPA: 3.447/4.00}{Graduated: 2022}
+  {B.Sc. in Computer Science \& Engineering, GPA: 3.447 / 4.00}{Graduated: 2022}
 
 \resumeSubHeadingListEnd
 
 %----------- CERTIFICATIONS -----------
 \section{Certifications}
 \resumeSubHeadingListStart
-    \resumeItem{AWS Certified Cloud Practitioner - AWS}
-    \resumeItem{Python with Django - Pondit}
-    \resumeItem{Applied Data Science I - WorldQuant University}
-    \resumeItem{Python Data Structure - University of Michigan (Coursera)}
-    \resumeItem{Web Application Development-DotNet - BITM}
+  \resumeItem{AWS Certified Cloud Practitioner - AWS}
+  \resumeItem{Python with Django - Pondit}
+  \resumeItem{Applied Data Science I - WorldQuant University}
+  \resumeItem{Python Data Structures - University of Michigan (Coursera)}
+  \resumeItem{Web Application Development (.NET) - BITM}
 \resumeSubHeadingListEnd
 
-%----------- REFERENCE -----------
+%----------- REFERENCES -----------
 \section{References}
 \resumeSubHeadingListStart
-    \resumeItem{References available upon request.}
+  \resumeItem{Available upon request.}
 \resumeSubHeadingListEnd
 
 \end{document}
